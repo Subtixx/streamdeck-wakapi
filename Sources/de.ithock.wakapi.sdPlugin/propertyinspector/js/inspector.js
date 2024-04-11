@@ -41,6 +41,9 @@ function registerPlugin(inRegisterEvent, inPropertyInspectorUUID) {
 function reloadProperties(eventObject) {
     const payloadSettings = eventObject.payload.settings;
 
+    if (document.getElementById('url').value === "undefined") {
+        document.getElementById('url').value = "";
+    }
     if (document.getElementById('username').value === "undefined") {
         document.getElementById('username').value = "";
     }
@@ -51,6 +54,7 @@ function reloadProperties(eventObject) {
         document.getElementById('minutes').value = "";
     }
 
+    document.getElementById('url').value = payloadSettings.url;
     document.getElementById('username').value = payloadSettings.username;
     document.getElementById('apikey').value = payloadSettings.apikey;
     document.getElementById('minutes').value = payloadSettings.minutes;
@@ -62,6 +66,7 @@ function refreshButtonOnClick() {
 
 function setGlobalSettings() {
     let payload = {};
+    payload.url = document.getElementById('url').value;
     payload.username = document.getElementById('username').value;
     payload.apikey = document.getElementById('apikey').value;
     payload.minutes = document.getElementById('minutes').value;

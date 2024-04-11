@@ -47,12 +47,13 @@ function handleMessage(event) {
 }
 
 function fetchWakaTimeStats() {
-    if (!(settings.username && settings.apikey && settings.minutes)) {
+    if (!(settings.url && settings.username && settings.apikey && settings.minutes)) {
         showAlert();
         return;
     }
 
-    fetch(`https://wakatime.com/api/v1/users/${settings.username}/durations?date=today`, {
+
+    fetch(`${settings.url}/api/v1/users/${settings.username}/durations?date=today`, {
         headers: new Headers({
             'Authorization': 'Basic ' + btoa(settings.apikey),
         })

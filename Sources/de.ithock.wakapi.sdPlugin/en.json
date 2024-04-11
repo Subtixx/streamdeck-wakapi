@@ -1,0 +1,16 @@
+{
+  "Description": "Stream Deck plugin for WakaApi",
+  "Name": "WakaApi Stream Deck Plugin",
+  "Category": "WakaApi",
+  "de.ithock.wakapi.action": {
+    "Name": "WakaApi",
+    "Tooltip": "Shows the remaining WakaTime time for the current user",
+  },
+  "Localization": {
+    "url": "URL",
+    "username": "Username",
+    "apikey": "API-Key",
+    "minutes": "Minutes",
+    "refresh": "Refresh"
+  }
+}

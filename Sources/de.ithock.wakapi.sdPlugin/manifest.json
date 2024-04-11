@@ -2,7 +2,7 @@
   "Actions": [
     {
       "Icon": "action/images/actionimage",
-      "Name": "WakaTime",
+      "Name": "WakaApi",
       "States": [
         {
           "Image": "action/images/action",
@@ -11,18 +11,18 @@
         }
       ],
       "SupportedInMultiActions": false,
-      "Tooltip": "Display left WakaTime hours",
-      "UUID": "com.morphclue.wakatime.action"
+      "Tooltip": "Display WakApi",
+      "UUID": "de.ithock.wakapi.action"
     }
   ],
   "SDKVersion": 2,
-  "Author": "Morphclue",
+  "Author": "IT-Hock",
   "CodePath": "index.html",
   "PropertyInspectorPath": "propertyinspector/index.html",
   "Description": "Username- and Timer-Settings",
-  "Name": "Stream Deck WakaTime",
+  "Name": "Stream Deck WakaApi",
   "Icon": "action/images/action",
-  "URL": "https://github.com/Morphclue/streamdeck-wakatime",
+  "URL": "https://github.com/ithock/streamdeck-wakapi",
   "Version": "1.0.12",
   "OS": [
     {

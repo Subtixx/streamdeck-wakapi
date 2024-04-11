@@ -1,0 +1,16 @@
+{
+  "Description": "WakApi-Zeiten",
+  "Name": "Stream Deck WakApi",
+  "Category": "WakApi",
+  "de.ithock.wakapi.action": {
+    "Name": "WakApi",
+    "Tooltip": "Zeigt die verbleibende WakApi Arbeitszeit an."
+  },
+  "Localization": {
+    "url": "URL",
+    "username": "Nutzername",
+    "apikey": "API-Key",
+    "minutes": "Minuten",
+    "refresh": "Aktualisieren"
+  }
+}
